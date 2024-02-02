@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "belpatram-ventures": {
+      "hosting": {
+        "Belpatram2": [
+          "belpatram-ventures"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "belpatram-ventures"
+  }
+}

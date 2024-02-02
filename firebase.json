@@ -1,0 +1,10 @@
+{
+  "hosting": [
+    {
+      "target": "Belpatram2",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ],
+  "public" : "dist/"
+}

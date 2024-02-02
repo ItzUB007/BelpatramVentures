@@ -1,0 +1,193 @@
+.page-top-section {
+    background-image: url(../../../assets/img/networkbg.jpg);
+}
+
+.milestones-section {
+    background-image: url(../../../assets/img/milestones-bg.jpg);
+}
+
+/// Map
+/// 
+/// 
+
+
+
+
+
+
+.map-container {
+    padding: 3.2rem .8rem;
+    position: relative;
+    display: inline-block;
+
+    img {
+        width: 100%;
+    }
+
+    .point {
+        cursor: pointer;
+        position: absolute;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: var(--green);
+        border-radius: 50%;
+        transition: all .3s ease;
+        will-change: transform, box-shadow;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 rgba(var(--green), 0.4);
+        animation: pulse 3s infinite;
+
+        &:hover {
+            animation: none;
+            transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+    }
+
+    .india {
+        top: 45%;
+        left: 69%;
+    }
+
+    .Egypt {
+        top: 40%;
+        left: 53%;
+    }
+
+    .Bangladesh {
+        top: 43%;
+        left: 72%;
+    }
+
+    .Vietnam {
+        top: 47%;
+        left: 78%;
+    }
+
+    .Madagascar{
+        top: 70%;
+        left: 59%;
+    }
+
+
+
+    .USA{
+        top: 30%;
+        left: 15%;
+    }
+
+    .AUSTRALIA{
+        top: 73%;
+        left: 85%;
+    }
+    .SPAIN{
+        top: 32%;
+        left: 43%;
+    }
+    .ITALY{
+        top: 32%;
+        left: 48%;
+    }
+    .DUBAI{
+        top: 43%;
+        left: 62%;
+    }
+
+    .point2 {
+        cursor: pointer;
+        position: absolute;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: var(--orange);
+        border-radius: 50%;
+        transition: all .3s ease;
+        will-change: transform, box-shadow;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 rgba(var(--green), 0.4);
+        animation: pulse2 3s infinite;
+
+        &:hover {
+            animation: none;
+            transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+    }
+
+
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(#c8e265, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 25px rgba(#c8e265, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(#c8e265, 0);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(orange, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 25px rgba(orange, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(orange, 0);
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .map-container {
+        .point {
+            width: 1.0rem;
+            height: 1.0rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .map-container {
+        .point {
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+    }
+
+}
+
+
+.milestones-section2{
+    background-image: url(../../../assets/img/Stocks.jpg);
+}
+
+
+
+
+
+.colourBox{
+    height: 30px;
+    width: 30px;
+    background-color: #c8e265;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.colourBox2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: var(--orange);
+}

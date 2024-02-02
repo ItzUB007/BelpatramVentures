@@ -1,0 +1,408 @@
+.page-top-section {
+    background-image: url(../../../assets/img/asian-designer.jpg);
+}
+
+
+.container1 {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.member {
+
+    h1 {
+        font-family: "Open Sans", sans;
+        font-weight: 300;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6)
+    }
+
+    h2 {
+        color: #2c3e52;
+        font-family: "Open Sans", sans;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 50px;
+
+    }
+}
+
+.service-details {
+    /*width: 460px;*/
+    min-height: 400px;
+    height: auto;
+    /*height: 230px;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.service-details img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    float: left;
+    transition: all 0.8s;
+    -moz-transition: all 0.8s;
+
+}
+
+.service-details:hover img {
+    /*opacity: 0.4 !important;*/
+}
+
+.service-details .service-hover-text h3 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Open Sans";
+}
+
+.service-details .service-hover-text h4 {
+    padding: 0px;
+    padding-bottom: 13px;
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 90%;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+}
+
+.service-details .service-hover-text p {
+    padding-top: 13px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Open Sans";
+}
+
+
+.service-details .service-hover-text {
+
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    padding: 3% 4%;
+    background: var(--green);
+    color: rgba(255, 255, 255, 1);
+    /*  display: none;*/
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.4s;
+    opacity: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.service-details:hover .service-hover-text {
+    display: block !important;
+    color: rgba(255, 255, 255, 1);
+    background: #c9e265db;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+}
+
+
+.service-details .service-text {
+    width: 40%;
+    height: inherit;
+    background: #000;
+    float: left;
+    position: absolute;
+    left: 60%;
+}
+
+.service-details .service-text p {
+    padding: 100px 0px 0px 20px;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #fff;
+}
+
+.service-details .service-text p span {
+    font-family: "Open Sans" !important;
+}
+
+.service-details .service-text a,
+.service-white .service-text {
+    padding: 0px 0px 0px 20px;
+    font-size: 14px !important;
+    color: var(--green) !important;
+    font-family: "Open Sans" !important;
+    text-decoration: none !important;
+}
+
+.service-details .service-text {
+    float: left;
+}
+
+.service-white {
+    background: #eee !important;
+    width: 40% !important;
+    height: 100% !important;
+}
+
+.service-white p {
+    color: #000 !important;
+}
+
+//////////////////
+/// 
+/// 
+/// 
+/// // Variables
+$regal-blue: #034378;
+$san-juan: #2d4e68;
+$bermuda: #77d7b9;
+$white: #fff;
+$black: #000;
+
+  
+// Base styles
+.card {
+    float: left;
+    padding: 0 1.7rem;
+    width: 500px;
+    max-width: 100%;
+    .menu-content {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        display: inline-block;
+      }
+      a {
+        color: white;
+      }
+      span {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        font-size: 10px;
+        font-weight: 700;
+        font-family: 'Open Sans';
+        transform: translate(-50%, 0);
+      }
+    }
+    .wrapper {
+      background-color: white;
+      min-height: 540px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+      &:hover {
+        .data {
+          transform: translateY(0);
+        }
+      }
+    }
+    .data {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      min-height: 540px;
+      transform: translateY(calc(540px));
+      transition: transform 0.3s;
+      .content {
+        padding: 1em;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .author {
+      font-size: 12px;
+    }
+    .title {
+      margin-top: 10px;
+    }
+    .text {
+      height: 100%;
+      margin: 0;
+    }
+    input[type='checkbox'] {
+      display: none;
+    }
+    input[type='checkbox']:checked + .menu-content {
+      transform: translateY(-60px);
+    }
+  }
+  
+  // First example styles
+  .example-1 {
+    .wrapper {
+      
+    }
+    .date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $bermuda;
+      color: white;
+      padding: 0.8em;
+      span {
+        display: block;
+        text-align: center;
+      }
+      .day {
+        font-weight: 700;
+        font-size: 24px;
+        text-shadow: 2px 3px 2px rgba($black, 0.18);
+      }
+      .month {
+        text-transform: uppercase;
+      }
+      .month,
+      .year {
+        font-size: 12px;
+      }
+    }
+    .content {
+      background-color: white;
+      box-shadow: 0 5px 30px 10px rgba(black, 0.3);
+    }
+    .title {
+      a {
+        color: lighten($black, 50%);
+      }
+    }
+    .menu-button {
+      position: absolute;
+      z-index: 999;
+      top: 16px;
+      right: 16px;
+      width: 25px;
+      text-align: center;
+      cursor: pointer;
+      span {
+        width: 5px;
+        height: 5px;
+        background-color: lighten($black, 50%);
+        color: lighten($black, 50%);
+        position: relative;
+        display: inline-block;
+        border-radius: 50%;
+        &::after,
+        &::before {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 5px;
+          background-color: currentColor;
+          position: absolute;
+          border-radius: 50%;
+        }
+        &::before {
+          left: -10px;
+        }
+        &::after {
+          right: -10px;
+        }
+      }
+    }
+    .menu-content {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      transition: transform 0.3s;
+      transform: translateY(0);
+      li {
+        width: 33.333333%;
+        float: left;
+        background-color: $bermuda;
+        height: 60px;
+        position: relative;
+      }
+      a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+      }
+      span {
+        top: -10px;
+      }
+    }
+  }
+  
+  // Second example styles
+  .example-2 {
+    .wrapper {
+      background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+      &:hover {
+        .menu-content {
+          span {
+            transform: translate(-50%, -10px);
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .header {
+      color: white;
+      padding: 1em;
+      .date {
+        float: left;
+        font-size: 12px;
+      }
+    }
+    .menu-content {
+      float: right;
+      li {
+        margin: 0 5px;
+        position: relative;
+      }
+      span {
+        transition: all 0.3s;
+        opacity: 0;
+      }
+    }
+    .data {
+      color: white;
+      transform: translateY(calc(70px + 4em));
+    }
+    .title {
+      a {
+        color:white;
+      }
+    }
+    .button {
+      display: block;
+      width: 100px;
+      margin: 2em auto 1em;
+      text-align: center;
+      font-size: 12px;
+      color: white;
+      line-height: 1;
+      position: relative;
+      font-weight: 700;
+      &::after {
+        content: '\2192';
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: all 0.3s;
+      }
+      &:hover {
+        &::after {
+          transform: translate(5px, -50%);
+          opacity: 1;
+        }
+      }
+    }
+  }
